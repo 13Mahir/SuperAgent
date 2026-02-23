@@ -1,0 +1,194 @@
+INFO:     Started server process [97642]
+INFO:     Waiting for application startup.
+2026-02-23 08:11:25,039 │ INFO     │ main │ 🚀 Starting SuperAgent backend…
+2026-02-23 08:11:25,039 │ INFO     │ app.services.base.base_service │ ConversationService initialising…
+2026-02-23 08:11:25,039 │ INFO     │ app.services.base.base_service │ ConversationService ready.
+2026-02-23 08:11:25,039 │ INFO     │ app.services.llm_service │ LLMService initialised: model=gemini/gemini-2.5-flash, temperature=0.60
+2026-02-23 08:11:25,039 │ INFO     │ app.services.base.base_service │ LLMService initialising…
+2026-02-23 08:11:25,039 │ INFO     │ app.services.base.base_service │ LLMService ready.
+2026-02-23 08:11:25,046 │ INFO     │ app.services.base.base_service │ ComposioService initialising…
+2026-02-23 08:11:25,046 │ INFO     │ app.services.base.base_service │ ComposioService ready.
+2026-02-23 08:11:25,046 │ INFO     │ app.services.composio_service │ ComposioService initialised with Tool Router.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ GeminiEmbeddingService initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ GeminiEmbeddingService ready.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.gemini_embedding_service │ GeminiEmbeddingService ready: model=gemini-2.5-flash, dimension=768
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ EmbeddingService initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ EmbeddingService ready.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ ChromaDBService initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ ChromaDBService ready.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.chromadb_service │ ChromaDBService ready: collection=superagent, embedding_dim=768
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ PDFService initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ PDFService ready.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.pdf_service │ PDFService ready: chunk_size=1000, chunk_overlap=200, max_file_mb=50
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ ToolExecutor initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ ToolExecutor ready.
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ SuperAgentService initialising…
+2026-02-23 08:11:25,056 │ INFO     │ app.services.base.base_service │ SuperAgentService ready.
+2026-02-23 08:11:25,056 │ INFO     │ main │ ✅ All services ready.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5050 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55795 - "WebSocket /chat/ws" [accepted]
+2026-02-23 08:11:28,208 │ INFO     │ app.routes.chat │ WebSocket client connected
+INFO:     connection open
+2026-02-23 08:11:28,486 │ INFO     │ app.routes.chat │ WebSocket client disconnected
+INFO:     connection closed
+INFO:     127.0.0.1:55806 - "WebSocket /chat/ws" [accepted]
+2026-02-23 08:11:30,521 │ INFO     │ app.routes.chat │ WebSocket client connected
+INFO:     connection open
+2026-02-23 08:11:41,147 │ DEBUG    │ superagent │ [conversation_history] message=Initialized conversation history manager
+2026-02-23 08:11:41,147 │ DEBUG    │ superagent │ [conversation_history] message=Initialized conversation history manager
+2026-02-23 08:11:41,147 │ INFO     │ superagent │ [conversation_service] message=Created conversation 8d20ea8ec1c340008ffb572cfe632747
+2026-02-23 08:11:41,147 │ INFO     │ superagent │ [conversation_service] message=Created conversation 8d20ea8ec1c340008ffb572cfe632747
+2026-02-23 08:11:41,147 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 2
+2026-02-23 08:11:41,147 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 2
+2026-02-23 08:11:41,591 │ INFO     │ app.services.composio_service │ Created Tool Router session for user mahit
+2026-02-23 08:11:42,184 │ INFO     │ app.services.composio_service │ Retrieved 6 session tools for user mahit (session trs_ml8GybHaZMiA)
+2026-02-23 08:11:42,185 │ INFO     │ app.services.superagent_service │ Loaded 6 Tool Router meta tools for user mahit (session trs_ml8GybHaZMiA)
+[92m08:11:42 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:11:42,222 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:11:44,744 │ INFO     │ app.services.llm_service │ LLM batch response time: 2558.52 ms
+2026-02-23 08:11:47,033 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_SEARCH_TOOLS (session trs_ml8GybHaZMiA)
+[92m08:11:47 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:11:47,038 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:11:49,825 │ INFO     │ app.services.llm_service │ LLM batch response time: 2788.28 ms
+2026-02-23 08:11:50,604 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MANAGE_CONNECTIONS (session trs_ml8GybHaZMiA)
+2026-02-23 08:11:50,605 │ INFO     │ app.services.superagent_service │ COMPOSIO_MANAGE_CONNECTIONS result: {
+  "data": {
+    "message": "All connections have been initiated and are pending completion",
+    "results": {
+      "gmail": {
+        "toolkit": "gmail",
+        "status": "initiated",
+        "redirect_url": "https://connect.composio.dev/link/lk_ofeqPhjx28pN",
+        "instruction": "Action required: Share the following authentication link with the user to complete setup for 'gmail'.\n\nAuthentication Link (render clickable):\nhttps://connect.composio.dev/link/lk_ofeqPhjx28pN\n\nWhat happens next:\n1) User opens the link in their browser. They will see a Composio branded authentication UI.\n2) For OAuth: user authorizes with the provider.\n3) For API/Token auth: User enters the required credentials in the form.\n4) The connection becomes Active automatically once completed.\n\nImportant Notes:\n- DO NOT execute any gmail tools until an Active connection is confirmed.\n- Render as clickable link: [Connect gmail](https://connect.composio.dev/link/lk_ofeqPhjx28pN).\n- The above link expires in 10 minutes.\n",
+        "was_reinitiated": false
+      },
+      "googlecalendar": {
+        "toolkit": "googlecalendar",
+        "status": "initiated",
+        "redirect_url": "https://connect.composio.dev/link/lk_uYLlqLAyl-1Y",
+        "instruction": "Action required: Share the following authentication link with the user to complete setup for 'googlecalendar'.\n\nAuthentication Link (render clickable):\nhttps://connect.composio.dev/link/lk_uYLlqLAyl-1Y\n\nWhat happens next:\n1) User opens the link in their browser. They will see a Composio branded authentication UI.\n2) For OAuth: user authorizes with the provider.\n3) For API/Token auth: User enters the required credentials in the form.\n4) The connection becomes Active automatically once completed.\n\nImportant Notes:\n- DO NOT execute any googlecalendar tools until an Active connection is confirmed.\n- Render as clickable link: [Connect googlecalendar](https://connect.composio.dev/link/lk_uYLlqLAyl-1Y).\n- The above link expires in 10 minutes.\n",
+        "was_reinitiated": false
+      }
+    },
+    "session": {
+      "id": "like",
+      "instructions": "REQUIRED: Pass session_id \"like\" in ALL subsequent meta tool calls for this workflow."
+    }
+  },
+  "error": null,
+  "log_id": "log_AHWY941Whx2F"
+}
+2026-02-23 08:11:50,605 │ INFO     │ app.services.superagent_service │ Found redirect_url for toolkit 'gmail': https://connect.composio.dev/link/lk_ofeqPhjx28pN
+2026-02-23 08:11:50,605 │ INFO     │ app.services.superagent_service │ Emitting connection_required event: {'toolkit': 'gmail', 'redirect_url': 'https://connect.composio.dev/link/lk_ofeqPhjx28pN', 'message': 'Please connect your gmail to continue. Click the button below to authenticate.'}
+2026-02-23 08:11:50,605 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 7
+2026-02-23 08:11:50,605 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 7
+2026-02-23 08:12:15,655 │ INFO     │ app.routes.chat │ Auth completed for user mahit, conversation 8d20ea8ec1c340008ffb572cfe632747 — resuming
+2026-02-23 08:12:15,655 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:12:15,655 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:12:15,655 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 8
+2026-02-23 08:12:15,655 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 8
+2026-02-23 08:12:16,036 │ INFO     │ app.services.composio_service │ Created Tool Router session for user mahit
+2026-02-23 08:12:16,490 │ INFO     │ app.services.composio_service │ Retrieved 6 session tools for user mahit (session trs_ml8GybHaZMiA)
+2026-02-23 08:12:16,491 │ INFO     │ app.services.superagent_service │ Loaded 6 Tool Router meta tools for user mahit (session trs_ml8GybHaZMiA)
+[92m08:12:16 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:16,493 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:19,678 │ INFO     │ app.services.llm_service │ LLM batch response time: 3186.72 ms
+2026-02-23 08:12:22,834 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_SEARCH_TOOLS (session trs_ml8GybHaZMiA)
+[92m08:12:22 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:22,839 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:26,359 │ INFO     │ app.services.llm_service │ LLM batch response time: 3521.30 ms
+2026-02-23 08:12:26,848 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MANAGE_CONNECTIONS (session trs_ml8GybHaZMiA)
+2026-02-23 08:12:26,849 │ INFO     │ app.services.superagent_service │ COMPOSIO_MANAGE_CONNECTIONS result: {
+  "data": {
+    "message": "All connections have been initiated and are pending completion",
+    "results": {
+      "googlecalendar": {
+        "toolkit": "googlecalendar",
+        "status": "initiated",
+        "redirect_url": "https://connect.composio.dev/link/lk_-TKgLJKie6Gq",
+        "instruction": "Action required: Share the following authentication link with the user to complete setup for 'googlecalendar'.\n\nAuthentication Link (render clickable):\nhttps://connect.composio.dev/link/lk_-TKgLJKie6Gq\n\nWhat happens next:\n1) User opens the link in their browser. They will see a Composio branded authentication UI.\n2) For OAuth: user authorizes with the provider.\n3) For API/Token auth: User enters the required credentials in the form.\n4) The connection becomes Active automatically once completed.\n\nImportant Notes:\n- DO NOT execute any googlecalendar tools until an Active connection is confirmed.\n- Render as clickable link: [Connect googlecalendar](https://connect.composio.dev/link/lk_-TKgLJKie6Gq).\n- The above link expires in 10 minutes.\n",
+        "was_reinitiated": false
+      }
+    },
+    "session": {
+      "id": "like",
+      "instructions": "REQUIRED: Pass session_id \"like\" in ALL subsequent meta tool calls for this workflow."
+    }
+  },
+  "error": null,
+  "log_id": "log_iJbCrSJDjmUb"
+}
+2026-02-23 08:12:26,850 │ INFO     │ app.services.superagent_service │ Found redirect_url for toolkit 'googlecalendar': https://connect.composio.dev/link/lk_-TKgLJKie6Gq
+2026-02-23 08:12:26,850 │ INFO     │ app.services.superagent_service │ Emitting connection_required event: {'toolkit': 'googlecalendar', 'redirect_url': 'https://connect.composio.dev/link/lk_-TKgLJKie6Gq', 'message': 'Please connect your googlecalendar to continue. Click the button below to authenticate.'}
+2026-02-23 08:12:26,850 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 13
+2026-02-23 08:12:26,850 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 13
+2026-02-23 08:12:44,271 │ INFO     │ app.routes.chat │ Auth completed for user mahit, conversation 8d20ea8ec1c340008ffb572cfe632747 — resuming
+2026-02-23 08:12:44,271 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:12:44,271 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:12:44,271 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 14
+2026-02-23 08:12:44,271 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 14
+2026-02-23 08:12:44,617 │ INFO     │ app.services.composio_service │ Created Tool Router session for user mahit
+2026-02-23 08:12:45,069 │ INFO     │ app.services.composio_service │ Retrieved 6 session tools for user mahit (session trs_ml8GybHaZMiA)
+2026-02-23 08:12:45,069 │ INFO     │ app.services.superagent_service │ Loaded 6 Tool Router meta tools for user mahit (session trs_ml8GybHaZMiA)
+[92m08:12:45 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:45,072 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:48,951 │ INFO     │ app.services.llm_service │ LLM batch response time: 3881.32 ms
+2026-02-23 08:12:51,688 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_SEARCH_TOOLS (session trs_ml8GybHaZMiA)
+[92m08:12:51 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:51,693 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:55,999 │ INFO     │ app.services.llm_service │ LLM batch response time: 4306.56 ms
+2026-02-23 08:12:56,976 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MULTI_EXECUTE_TOOL (session trs_ml8GybHaZMiA)
+[92m08:12:56 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:12:56,981 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:13:02,075 │ INFO     │ app.services.llm_service │ LLM batch response time: 5096.19 ms
+2026-02-23 08:13:03,912 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MULTI_EXECUTE_TOOL (session trs_ml8GybHaZMiA)
+[92m08:13:03 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:13:03,915 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:13:08,606 │ INFO     │ app.services.llm_service │ LLM batch response time: 4692.81 ms
+2026-02-23 08:13:08,607 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 21
+2026-02-23 08:13:08,607 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 21
+2026-02-23 08:15:14,173 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:15:14,173 │ DEBUG    │ superagent │ [conversation_service] message=Conversation 8d20ea8ec1c340008ffb572cfe632747 already exists, reusing.
+2026-02-23 08:15:14,173 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 22
+2026-02-23 08:15:14,173 │ DEBUG    │ superagent │ [conversation_history] message=Added user message to history. Current length: 22
+2026-02-23 08:15:14,653 │ INFO     │ app.services.composio_service │ Created Tool Router session for user mahit
+2026-02-23 08:15:15,150 │ INFO     │ app.services.composio_service │ Retrieved 6 session tools for user mahit (session trs_ml8GybHaZMiA)
+2026-02-23 08:15:15,150 │ INFO     │ app.services.superagent_service │ Loaded 6 Tool Router meta tools for user mahit (session trs_ml8GybHaZMiA)
+[92m08:15:15 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:15,153 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:19,734 │ INFO     │ app.services.llm_service │ LLM batch response time: 4582.70 ms
+2026-02-23 08:15:20,518 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MULTI_EXECUTE_TOOL (session trs_ml8GybHaZMiA)
+[92m08:15:20 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:20,522 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:24,503 │ INFO     │ app.services.llm_service │ LLM batch response time: 3982.84 ms
+2026-02-23 08:15:26,307 │ INFO     │ app.services.composio_service │ Executed session meta tool COMPOSIO_MULTI_EXECUTE_TOOL (session trs_ml8GybHaZMiA)
+[92m08:15:26 - LiteLLM:INFO[0m: utils.py:3895 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:26,311 │ INFO     │ LiteLLM │ 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2026-02-23 08:15:30,601 │ INFO     │ app.services.llm_service │ LLM batch response time: 4291.43 ms
+2026-02-23 08:15:30,602 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 27
+2026-02-23 08:15:30,602 │ DEBUG    │ superagent │ [conversation_history] message=Added assistant message to history. Current length: 27
+2026-02-23 08:16:15,158 │ INFO     │ app.routes.chat │ WebSocket client disconnected
+INFO:     connection closed

@@ -1,0 +1,11 @@
+
+> superagent@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.30.56.55:3000
+
+✓ Starting...
+✓ Ready in 325ms
+ GET / 200 in 164ms (compile: 103ms, render: 60ms)
